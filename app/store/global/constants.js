@@ -1,0 +1,5 @@
+export const FETCH_ACCOUNT = 'global/FETCH_ACCOUNT';
+export const SUCCESS_FETCH_ACCOUNT = 'global/SUCCESS_FETCH_ACCOUNT';
+export const FAILED_FETCH_ACCOUNT = 'global/FAILED_FETCH_ACCOUNT';
+
+export const SET_COLLAPSED_MENUS = 'global/SET_COLLAPSED_MENUS';

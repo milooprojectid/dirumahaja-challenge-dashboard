@@ -1,0 +1,30 @@
+.header-component {
+  -webkit-box-shadow: 0px 16px 41px -19px rgba(189,200,255,1);
+  -moz-box-shadow: 0px 16px 41px -19px rgba(189,200,255,1);
+  box-shadow: 0px 16px 41px -19px rgba(189,200,255,1);
+  height: 57px;
+  padding: 6px 6px;
+  z-index: 100;
+
+  .icon-menu {
+    font-size: 24px;
+    line-height: 32px;
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    color: #1990ff;
+  }
+
+  .icon-user {
+    background: #eee;
+    padding: 9px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    position: absolute;
+    top: 5px;
+    left: 13px;
+    color: #1990ff;
+  }
+}
