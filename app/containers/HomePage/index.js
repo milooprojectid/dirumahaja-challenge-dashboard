@@ -1,37 +1,36 @@
 import React from 'react';
 import get from 'lodash/get';
-import { Spin, Row, Col } from 'antd';
+import { Spin } from 'antd';
 import { useHomeHelper } from './helper';
 import MapsComponent from './Maps';
-// import HeaderReportComponent from './HeaderReport';
+import HeaderReportComponent from './HeaderReport';
 import ChartAgeComponent from './ChartAge';
 import ChartGenderComponent from './ChartGender';
+import LocationListComponent from './LocationList';
 import './styles.scss';
 
 function HomePage() {
   const { selector } = useHomeHelper();
+  const BodyComponent = () => (
+    <React.Fragment>
+      <ChartGenderComponent selector={selector} />
+      <ChartAgeComponent selector={selector} />
+      <br />
+      <br />
+      <MapsComponent selector={selector} />
+      <LocationListComponent selector={selector} />
+    </React.Fragment>
+  );
 
   return (
     <React.Fragment>
+      <HeaderReportComponent />
       {get(selector, 'statistic.loading', true) ? (
-        <div className="loading-container">
-          <Spin tip="Prepare the data..." />
-        </div>
+        <Spin spinning tip="Prepare the data...">
+          <BodyComponent />
+        </Spin>
       ) : (
-        <React.Fragment>
-          <Row gutter={24}>
-            <Col span={19}>
-              <ChartAgeComponent selector={selector} />
-            </Col>
-            <Col span={5}>
-              <ChartGenderComponent selector={selector} />
-            </Col>
-          </Row>
-          <br />
-          <br />
-
-          <MapsComponent selector={selector} />
-        </React.Fragment>
+        <BodyComponent />
       )}
     </React.Fragment>
   );

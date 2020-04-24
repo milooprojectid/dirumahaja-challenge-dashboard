@@ -1,24 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import get from 'lodash/get';
-import { Row, Col, Statistic } from 'antd';
+import { Icon } from 'antd';
 
-function HeaderReport({ selector, averageAge }) {
+function HeaderReport() {
   return (
     <React.Fragment>
-      <Row gutter={16}>
-        <Col span={8}>
-          <Statistic
-            title="Active Users"
-            value={`${get(selector, 'statistic.data.total_user', 0)}`}
-          />
-        </Col>
-        <Col span={8}>
-          <Statistic title="Average Age" value={averageAge} />
-        </Col>
-      </Row>
-      <br />
-      <br />
+      <div className="display-flex margin-20-bottom">
+        <div className="text-epsilon">
+          <Icon type="bar-chart" />
+        </div>
+        <div className="text-analytic"> Analytics</div>
+      </div>
     </React.Fragment>
   );
 }

@@ -6,3 +6,29 @@
   height: 100vh;
   width: 100vw;
 }
+
+.text-analytic {
+  color: #5a5a5b;
+  margin-left: 15px;
+  padding-top: 3px;
+}
+
+.person-cirle  {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background: #3382d6;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 17px;
+}
+
+.loctions-card {
+  border-bottom: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: #fbfbfb;
+}

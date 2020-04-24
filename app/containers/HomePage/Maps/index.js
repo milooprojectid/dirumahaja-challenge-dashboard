@@ -5,8 +5,8 @@ import get from 'lodash/get';
 import { Icon, Card } from 'antd';
 
 const AnyReactComponent = () => (
-  <div>
-    <Icon style={{ fontSize: '20px', color: '#096dd9' }} type="monitor" />
+  <div className="person-cirle">
+    <Icon type="user" />
   </div>
 );
 

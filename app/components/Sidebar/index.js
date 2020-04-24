@@ -28,8 +28,8 @@ function SideBar({ redirector }) {
         inlineCollapsed={false}
       >
         <Menu.Item key={ROUTES.HOME_PAGE}>
-          <Icon type="home" style={{ fontSize: '15px' }} />
-          <span>Home</span>
+          <Icon type="bar-chart" style={{ fontSize: '15px' }} />
+          <span>Analytics</span>
         </Menu.Item>
       </Menu>
     </div>
