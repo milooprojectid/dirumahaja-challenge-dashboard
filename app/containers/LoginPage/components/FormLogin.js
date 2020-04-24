@@ -23,9 +23,7 @@ function FormLogin({ form, handleSubmit, loading }) {
     <>
       <div className="padding-36">
         <div className="text-center margin-28-top">
-          <div className="text-blue text-beta margin-28-top">
-            Selamat Datang!
-          </div>
+          <div className="text-blue text-beta margin-28-top"> Login </div>
         </div>
         <Spin spinning={loading}>
           <Form onSubmit={onSubmit} className="login-form margin-60-top">
