@@ -1,20 +1,19 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import get from 'lodash/get';
-import { Divider, Statistic, Row, Col } from 'antd';
+import { Statistic, Row, Col } from 'antd';
 
-function ChartGender({ selector }) {
+function CardCountComponent({ selector }) {
   return (
     <React.Fragment>
-      <Row gutter={16}>
-        <Col span={4}>
+      <Row gutter={24}>
+        <Col span={14}>
           <Statistic
             title="Active Users"
             value={get(selector, 'statistic.data.total_user', 0)}
             valueStyle={{ color: '#7e54a5' }}
             suffix="Person"
           />
-          <Divider type="vertical" />
         </Col>
         <Col
           span={4}
@@ -49,4 +48,4 @@ function ChartGender({ selector }) {
   );
 }
 
-export default ChartGender;
+export default CardCountComponent;
