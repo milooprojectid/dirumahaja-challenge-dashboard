@@ -25,7 +25,7 @@ function LoginPage() {
   return (
     <React.Fragment>
       <Row className="container">
-        <Col span={12}>
+        <Col span={12} className="container-left">
           <FormLogin handleSubmit={handleLoginSubmit} loading={isFetching} />
         </Col>
         <Col span={12} className="container-right">
