@@ -1,4 +1,7 @@
 steps:
+    - name: "gcr.io/cloud-builders/gsutil"
+      args: ["cp", "gs://miloo-bucket/environments/dirumahaja-dashboard", "./.env"]
+
     - name: node:12.16.0
       entrypoint: npm
       args: [ 'install' ]
