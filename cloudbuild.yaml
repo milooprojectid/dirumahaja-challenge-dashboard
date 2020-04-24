@@ -1,0 +1,11 @@
+steps:
+    - name: node:12.16.0
+      entrypoint: npm
+      args: [ 'install' ]
+
+    - name: node:12.16.0
+      entrypoint: npm
+      args: [ 'run', 'build' ]
+
+    - name: 'asia.gcr.io/miloo-phoenix/firebase'
+      args: [ 'deploy', '--only', 'hosting:admin-dirumahaja', '--token', '${{ secrets.FIREBASE_TOKEN }}']
