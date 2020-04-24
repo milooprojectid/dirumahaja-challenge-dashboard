@@ -10,7 +10,7 @@ import languageProviderReducer from 'containers/LanguageProvider/reducer';
 
 import authReducer from 'store/auth/reducer';
 import globalReducer from 'store/global/reducer';
-import ordersReducer from 'store/orders/reducer';
+import userReducer from 'store/users/reducer';
 import popupsReducer from 'store/popups/reducer';
 import statisticReducer from 'store/statistic/reducer';
 
@@ -23,7 +23,7 @@ export default function createReducer(injectedReducers = {}) {
     router: connectRouter(history),
     auth: authReducer,
     global: globalReducer,
-    orders: ordersReducer,
+    users: userReducer,
     popups: popupsReducer,
     statistic: statisticReducer,
     ...injectedReducers,

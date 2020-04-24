@@ -82,6 +82,7 @@
 }
 
 .text-green { color: $color-green; }
+.text-drak-grey { color: $color-grey-strong }
 .text-mute { color: $color-grey }
 .text-danger { color: $color-red-darker }
 .text-white { color: $color-white }
@@ -265,7 +266,7 @@
 
 .margin-4-left { margin-left : 4px; }
 .margin-8-left  { margin-left : 8px; }
-.margin-12-left  { margin-left : 12px; }
+.margin-12-left  { margin-left : 12px !important; }
 .margin-16-left  { margin-left : 16px; }
 .margin-24-left  { margin-left : 24px; }
 .margin-28-left  { margin-left : 28px; }

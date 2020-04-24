@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 import { Layout } from 'antd';
 import Header from 'components/Header';
 import HomePage from 'containers/HomePage/Loadable';
-import OrdersPage from 'containers/OrdersPage/Loadable';
+import UserPage from 'containers/UserPage/Loadable';
 import Sidebar from 'components/Sidebar';
 import * as ROUTES from 'configs/routes';
 import './styles.scss';
@@ -30,7 +30,7 @@ export function DashboardLayout() {
         <Layout.Content className="content">
           <Switch>
             <Route exact path={ROUTES.HOME_PAGE} component={HomePage} />
-            <Route exact path={ROUTES.ORDERS_PAGE} component={OrdersPage} />
+            <Route exact path={ROUTES.USERS_PAGE} component={UserPage} />
           </Switch>
         </Layout.Content>
       </Layout>
