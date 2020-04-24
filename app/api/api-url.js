@@ -9,3 +9,8 @@ export const DASHBOARD = {
   INDEX: () => `${BASE_URL}/dashboard`,
   MAPS: () => `${BASE_URL}/dashboard/map`,
 };
+
+export const USERS = {
+  INDEX: ({ page, name }) => `${BASE_URL}/users?page=${page}&name=${name}`,
+  DETAIL: ({ id }) => `${BASE_URL}/users/${id}`,
+};
